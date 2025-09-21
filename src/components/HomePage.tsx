@@ -15,22 +15,28 @@ const HomePage = () => {
         <section id="hero">
           <HeroSection />
         </section>
-        <section id="section-one" className="bg-background-secondary min-h-96">
+        <section
+          id="section-one"
+          className="flex items-center justify-center bg-background-secondary min-h-96"
+        >
           SECTION ONE
         </section>
-        <section id="section-two" className="bg-background min-h-96">
+        <section
+          id="section-two"
+          className="flex items-center justify-center bg-background min-h-96"
+        >
           SECTION TWO
         </section>
         <section
           id="section-three"
-          className="bg-background-secondary min-h-96"
+          className="flex items-center justify-center bg-background-secondary min-h-96"
         >
           SECTION THREE
         </section>
       </main>
 
       {/* Footer */}
-      <footer className="bg-background-inverse text-foreground-inverse min-h-40 py-12">
+      <footer className="flex items-center justify-center bg-background-inverse text-foreground-inverse min-h-96 py-12">
         FOOTER
       </footer>
     </div>

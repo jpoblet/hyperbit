@@ -35,23 +35,25 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed rounded-none md:rounded-full top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isVisible ? "translate-y-0" : "-translate-y-32"
       } ${
         hasBackground
-          ? "bg-white/20 dark:bg-white/10 backdrop-blur-xl border-white/70 dark:border-white/20 border mx-8 my-6 rounded-full"
-          : "bg-transparent border border-transparent rounded-full"
+          ? "bg-white/40 dark:bg-white/10 backdrop-blur-3xl border-b md:border border-white/70 dark:border-white/20 md:mx-8 md:my-6"
+          : "bg-transparent border border-transparent"
       }`}
     >
-      <div className="pl-10 pr-6 py-6">
+      <div className="pl-6 pr-4 py-4 md:pl-8 md:pr-5 md:py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center">
-            <div className="text-2xl text-foreground hidden sm:flex">
-              Hyperbit
+          <a href="/">
+            <div className="flex items-center">
+              <div className="text-2xl text-foreground hidden sm:flex">
+                Hyperbit
+              </div>
+              <div className="text-4xl text-foreground sm:hidden">H</div>
             </div>
-            <div className="text-4xl text-foreground sm:hidden">H</div>
-          </div>
+          </a>
 
           {/* Right side: Navigation Links + CTA + Dark Mode Toggle */}
           <div className="flex items-center space-x-3">
