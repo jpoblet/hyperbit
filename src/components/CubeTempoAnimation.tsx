@@ -42,10 +42,6 @@ export default function CubeTempoAnimation() {
       <div
         id="app"
         style={{
-          /*position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",*/
           scale: "1.5",
           width: 150,
           height: 180,
@@ -66,13 +62,13 @@ export default function CubeTempoAnimation() {
             }}
           >
             <svg width="50" height="60">
-              <use xlinkHref="#cube" />
+              <use href="#cube" />
             </svg>
             <svg width="50" height="60">
-              <use xlinkHref="#cube" />
+              <use href="#cube" />
             </svg>
             <svg width="50" height="60">
-              <use xlinkHref="#cube" />
+              <use href="#cube" />
             </svg>
           </div>
         ))}
@@ -84,10 +80,6 @@ export default function CubeTempoAnimation() {
 
         /* container */
         #app {
-          /*position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);*/
           width: 150px;
           height: 180px;
         }
