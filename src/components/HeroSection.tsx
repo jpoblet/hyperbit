@@ -1,4 +1,5 @@
 import React from "react";
+import CubeTempoAnimation from "./CubeTempoAnimation";
 
 interface HeroSectionProps {
   title?: string;
@@ -19,8 +20,8 @@ const HeroSection = ({
           </p>
         </div>
       </div>
-      <div className="flex bg-[lightblue] flex-grow items-center justify-center min-h-[100vw] md:min-h-full">
-        ANIMATION HERE
+      <div className="flex flex-grow items-center justify-center min-h-[100vw] md:min-h-full pb-40">
+        <CubeTempoAnimation />
       </div>
     </section>
   );
