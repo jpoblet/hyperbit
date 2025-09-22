@@ -1,7 +1,7 @@
 import React from "react";
 import Navigation from "./Navigation";
 import HeroSection from "./HeroSection";
-import GradientBackground from "./GradientBackground";
+/*import GradientBackground from "./GradientBackground";*/
 
 const HomePage = () => {
   return (
@@ -10,7 +10,7 @@ const HomePage = () => {
       <Navigation />
 
       {/* Main Content */}
-      <GradientBackground />
+      {/*<GradientBackground />*/}
       <main>
         <section id="hero">
           <HeroSection />
